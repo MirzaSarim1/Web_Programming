@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pete's Pizza Delivery </title>
+</head>
+
+<body>
+	<h1>Pete's Pizza Delivery</h1>
+	<h2>Online Order Form</h2>
+
+	<form action="" method="post">
+
+		<label for="name">*Name:</label>
+		<input style="margin-left: 30px;" type="text" id="name" name="name" required>
+
+		<label style="margin-left: 30px;" for="tel"> *Tel: </label>
+		<input style="margin-left: 20px;" type="tel" id="tel" name="tel" required>
+		<br>
+
+		<label for="address">*Address:</label>
+		<input style="margin-left: 16px;" type="text" id="address" name="address" required>
+
+		<label style="margin-left: 30px;" for="email"> *Email: </label>
+		<input style="margin-left: 2px;" type="email" id="email" name="email" required>
+		<br>
+
+		<label for="townCity">*Town/City:</label>
+		<input type="text" id="townCity" name="townCity" required><br>
+
+		<label for="postcode">*Postcode:</label>
+		<input style="margin-left: 10px;" type="text" id="postcode" name="postcode" required>
+		<br>
+		<br>
+
+
+		<h3>Topping </h3>
+		<ul style="list-style: none;">
+			<li><input type=“checkbox”id=“margherita”name=“topping”value=“Margherita”>
+				<label for=”margherita”> Margherita </label>
+			</li>
+
+			<li><input type=“checkbox”id=“fourSeasons”name=“topping” value=”Four Seasons ”>
+				<label for=”fourSeasons ”> Four Seasons </label>
+			</li>
+
+			<li><input type=”checkbox ”id=”meatFeast ”name=”topping ”value=”Meat Feast ”>
+				<label for=”meatFeast ”> Meat Feast </label>
+			</li>
+
+		</ul>
+
+		<h3>Size </h3>
+		<ul style="list-style: none;">
+			<li><input type=“radio”id=“small”name=“size”value=“Small”>
+				<label for=”small”> Small </label>
+			</li>
+
+			<li><input type=“radio”id=“medium”name=“size”value=“Medium”>
+				<label for=”medium”> Medium </label>
+			</li>
+
+			<li><input type=“radio”id=“large”name=“size”value=“Large”>
+				<label for=”large”> Large </label>
+			</li>
+
+		</ul>
+
+		<input type="submit" value="Submit Order">
+
+	</form>
+
+</body>
+
+</html>
