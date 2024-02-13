@@ -1,77 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Pete's Pizza Delivery </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pete's Pizza Delivery</title>
 </head>
-
 <body>
-	<h1>Pete's Pizza Delivery</h1>
-	<h2>Online Order Form</h2>
+  <h1>Pete's Pizza Delivery</h1>
+  <h2>Online Order Form</h2>
+  <form>
+    <label for="user">*Name: </label>
+    <input style="margin-left: 26px;"type="text" name="user" id="user" required />
+    
+    <label style="margin-left: 54px;" for="tel">*Tel: </label>
+    <input type="tel" name="tel" id="tel" required />
+    <br />
+    
+    <label for="address">*Address: </label>
+    <input style="margin-left: 12px;" type="text" name="address" id="address" required />
+    
+    <label style="margin-left: 43px;" for="email">Email: </label>
+    <input type="email" name="email" id="email" />
+    <br />
+    
+    <label for="city">*Town/city: </label>
+    <input type="text" name="city" id="city" />
+    <br />
+    
+    <label for="code">*Postcode: </label>
+    <input style="margin-left: 7px;" type="text" name="code" id="code" required />
+    <p style="margin-left: 160px;">* required fields</p>
 
-	<form action="" method="post">
-
-		<label for="name">*Name:</label>
-		<input style="margin-left: 30px;" type="text" id="name" name="name" required>
-
-		<label style="margin-left: 30px;" for="tel"> *Tel: </label>
-		<input style="margin-left: 20px;" type="tel" id="tel" name="tel" required>
-		<br>
-
-		<label for="address">*Address:</label>
-		<input style="margin-left: 16px;" type="text" id="address" name="address" required>
-
-		<label style="margin-left: 30px;" for="email"> *Email: </label>
-		<input style="margin-left: 2px;" type="email" id="email" name="email" required>
-		<br>
-
-		<label for="townCity">*Town/City:</label>
-		<input type="text" id="townCity" name="townCity" required><br>
-
-		<label for="postcode">*Postcode:</label>
-		<input style="margin-left: 10px;" type="text" id="postcode" name="postcode" required>
-		<br>
-		<br>
-
-
-		<h3>Topping </h3>
-		<ul style="list-style: none;">
-			<li><input type=“checkbox”id=“margherita”name=“topping”value=“Margherita”>
-				<label for=”margherita”> Margherita </label>
-			</li>
-
-			<li><input type=“checkbox”id=“fourSeasons”name=“topping” value=”Four Seasons ”>
-				<label for=”fourSeasons ”> Four Seasons </label>
-			</li>
-
-			<li><input type=”checkbox ”id=”meatFeast ”name=”topping ”value=”Meat Feast ”>
-				<label for=”meatFeast ”> Meat Feast </label>
-			</li>
-
-		</ul>
-
-		<h3>Size </h3>
-		<ul style="list-style: none;">
-			<li><input type=“radio”id=“small”name=“size”value=“Small”>
-				<label for=”small”> Small </label>
-			</li>
-
-			<li><input type=“radio”id=“medium”name=“size”value=“Medium”>
-				<label for=”medium”> Medium </label>
-			</li>
-
-			<li><input type=“radio”id=“large”name=“size”value=“Large”>
-				<label for=”large”> Large </label>
-			</li>
-
-		</ul>
-
-		<input type="submit" value="Submit Order">
-
-	</form>
-
+    <table>
+      <tr>
+        <th>Topping</th>
+        <th>Size</th>
+        <th>Extras</th>
+      </tr>
+      <tr>
+        <td><input type="radio" id="margherita" name="topping" /><label for="margherita">Margherita</label></td>
+        <td><input type="radio" id="small" name="size" /><label for="small">Small</label></td>
+        <td><input type="radio" id="mushrooms" name="extra" /><label for="mushrooms">Mushrooms</label></td>
+      </tr>
+      <tr>
+        <td><input type="radio" id="margherita" name="topping" /><label for="margherita">Four Seasons</label></td>
+        <td><input type="radio" id="small" name="size" /><label for="small">Medium</label></td>
+        <td><input type="radio" id="mushrooms" name="extra" /><label for="mushrooms">Green Peppers</label></td>
+      </tr>
+      <tr>
+        <td><input type="radio" id="margherita" name="topping" /><label for="margherita">Meat Feast</label></td>
+        <td><input type="radio" id="small" name="size" /><label for="small">Large</label></td>
+        <td><input type="radio" id="mushrooms" name="extra" /><label for="mushrooms">Extra Cheese</label></td>
+      </tr>
+    </table>
+    <br><br><br>
+    <label for="time">Preferred delivery time: </label>
+    <input type="time" name="time" id="time" />
+    <br />
+    
+    <label for="ins">Delivery instructions: </label>
+    <textarea name="instructions" rows="5"></textarea>
+    <br />
+    
+    <input type="submit" value="Submit order"/>
+  </form>
 </body>
-
 </html>
