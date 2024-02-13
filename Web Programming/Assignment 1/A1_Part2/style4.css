@@ -1,0 +1,19 @@
+body{
+    margin: 20px 20px;
+}
+.card{
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgb(161, 161, 161);
+    transition: 0.3s;
+}
+.img{
+    width: 100%;
+}
+p{
+    padding-bottom: 20px;
+    text-align: center;
+}
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgb(126, 126, 126);
+    cursor: pointer;
+}

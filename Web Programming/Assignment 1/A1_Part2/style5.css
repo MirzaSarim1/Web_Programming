@@ -1,0 +1,120 @@
+.Heading {
+    background-color: lightslategray;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10%;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.namediv {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.imgdiv {
+    padding-top: 20px;
+}
+
+.imgdiv img {
+    width: 130px;
+    height: 140px;
+    object-fit: cover;
+    border: 3px solid lightgray;
+    border-radius: 10px;
+}
+
+.LinksDiv {
+    display: flex;
+    gap: 15px;
+
+}
+
+.Links {
+    text-decoration: none;
+    color: white;
+}
+
+
+.InfoSections {
+    box-shadow: 12px 10px 12px 10px rgba(46, 46, 46, 0.2);
+    border-radius: 7px;
+    margin: 20px;
+    padding: 15px;
+}
+
+.InfoSections {
+    transition: all 0.5s;
+}
+
+.InfoSections:hover {
+    transform: scale(1.025);
+}
+
+.InfoSections h1 {
+    font-size: 24px;
+}
+
+.InfoSections p {
+    font-size: 16px;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: blue;
+    border: solid 1px;
+    border-color: blue;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 20px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    padding-bottom: 100;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 8px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+.ContactUS {
+    background-color: lightslategray;
+    color: #fff;
+    border-width: 10px;
+    height: 100px;
+}
+.ContactUS p{
+    padding-top: 20px;
+    text-align: center;
+    font-size: large;
+}
