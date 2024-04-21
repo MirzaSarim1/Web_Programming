@@ -1,0 +1,16 @@
+/* Custom Styles */
+.section {
+    padding: 80px 0;
+  }
+  
+  .footer {
+    padding: 20px 0;
+  }
+  
+  /* Media Query for adjusting padding in smaller screens */
+  @media (max-width: 768px) {
+    .section {
+      padding: 50px 0;
+    }
+  }
+  
